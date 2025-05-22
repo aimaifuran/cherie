@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Service</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      background: radial-gradient(circle at center, #384160 0%, #1c1e2b 100%);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    header {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #ff4d4d;
+    }
+
+    .service-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 120px 60px 60px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .services {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .services h2 {
+      color: #e53935;
+      font-size: 42px;
+      font-weight: 800;
+      margin-bottom: 40px;
+    }
+
+    .service-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+
+    .service-item .number {
+      background-color: #e53935;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      border-radius: 4px;
+    }
+
+    .service-item p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .service-image {
+      flex: 1;
+      max-width: 500px;
+    }
+
+    .service-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+
+      .service-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 20px 40px;
+      }
+
+      .services h2 {
+        text-align: center;
+        font-size: 32px;
+      }
+
+      .service-image {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Service Section -->
+  <section class="service-section">
+    <div class="services">
+      <h2>OUR SERVICE</h2>
+
+      <div class="service-item">
+        <div class="number">01</div>
+        <p><strong>Haircut –</strong> Styling or trimming the hair according to the client's preference (e.g., fade, undercut, crew cut).</p>
+      </div>
+
+      <div class="service-item">
+        <div class="number">02</div>
+        <p><strong>Beard Trim or Shave –</strong> Shaping or shaving facial hair using clippers or razors.</p>
+      </div>
+
+      <div class="service-item">
+        <div class="number">03</div>
+        <p><strong>Hair Styling –</strong> Applying products like gel, wax, or pomade to achieve a desired hairstyle.</p>
+      </div>
+    </div>
+
+    <div class="service-image" style="display:flex; justify-content:center; align-items:center;">
+      <img src="loglog.png" alt="Barber at work" style="max-width:350px; width:100%; height:auto; display:block;">
+    </div>
+  </section>
+
+</body>
+</html>
