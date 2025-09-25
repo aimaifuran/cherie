@@ -3,3 +3,5 @@ Virtual environment active: Yes
 Django version: 5.2
 runserver working: Yes
 Git remote set: Yes (origin: https://github.com/aimaifuran/cherie.git)
+git add .
+git commit -m "Merge remote-tracking branch 'origin/main'"

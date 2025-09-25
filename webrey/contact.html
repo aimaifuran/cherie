@@ -1,0 +1,141 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      background: radial-gradient(circle at center, #384160 0%, #1c1e2b 100%);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1.5rem 2rem;
+    }
+
+    header nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #ef4444;
+    }
+
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 3rem;
+      gap: 3rem;
+    }
+
+    .image-box img {
+      width: 320px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .contact-box {
+      max-width: 500px;
+    }
+
+    .contact-box h1 {
+      color: #e53935;
+      font-size: 2.7rem;
+      margin-bottom: 2rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+      font-size: 1.05rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-icon {
+      width: 22px;
+      margin-right: 0.75rem;
+    }
+
+    .contact-text {
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-box {
+        text-align: center;
+      }
+
+      .contact-item {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="main-content">
+    <div class="image-box">
+      <img src="image5.jpg" alt="Contact Image">
+    </div>
+    <div class="contact-box">
+      <h1>Contact Us</h1>
+      <div class="contact-info">
+        <div class="contact-item">
+          <img class="contact-icon" src="https://img.icons8.com/ios-filled/50/e53935/phone.png" alt="Phone Icon">
+          <span class="contact-text">09888111336</span>
+        </div>
+        <div class="contact-item">
+          <img class="contact-icon" src="https://img.icons8.com/ios-filled/50/e53935/domain.png" alt="Website Icon">
+          <span class="contact-text">biglangpogibarbershop.com</span>
+        </div>
+        <div class="contact-item">
+          <img class="contact-icon" src="https://img.icons8.com/ios-filled/50/e53935/new-post.png" alt="Email Icon">
+          <span class="contact-text">reynelniegas15@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <img class="contact-icon" src="https://img.icons8.com/ios-filled/50/e53935/marker.png" alt="Location Icon">
+          <span class="contact-text">Brgy. Culasian, Capoocan, Leyte</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
