@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}{{ announcement.title }}{% endblock %}
+{% block content %}
+    <h2>{{ announcement.title }}</h2>
+    <p>{{ announcement.summary }}</p>
+    <div id="details" style="display:none;">
+        <p>{{ announcement.details }}</p>
+    </div>
+    <button id="toggleBtn" onclick="toggleDetails()">Read more</button>
+    <script>
+        function toggleDetails() {
+            var details = document.getElementById('details');
+            var btn = document.getElementById('toggleBtn');
+            if (details.style.display === "none") {
+                details.style.display = "block";
+                btn.textContent = "Show less";
+            } else {
+                details.style.display = "none";
+                btn.textContent = "Read more";
+            }
+        }
+    </script>
+{% endblock %}
